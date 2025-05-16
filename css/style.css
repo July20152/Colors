@@ -1,0 +1,111 @@
+:root {
+    --color-primario: #ee24abcf;
+    --color-secundario: #e920cb;
+    --color-fondo: #f3bfd6;
+    --color-texto: #2c3e50;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow-y: auto;
+}
+
+header {
+    background-color: var(--color-primario);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: var(--color-secundario);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #cf8fdb;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.seccion {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.activa {
+    display: block;
+}
+.seccion {
+    text-align: justify;
+}
+/* Contenedor de las viñetas */
+.viñetas-container {
+    display: flex;
+    flex-direction: column;  /* Alinea las viñetas en columna */
+    gap: 20px;  /* Espacio entre las viñetas */
+    text-align: left;  /* Alinea el texto a la izquierda */
+    margin: 20px 0;  /* Margen superior e inferior */
+}
+
+.viñeta {
+    display: flex;
+    align-items: center;  /* Alinea los íconos y texto en el centro verticalmente */
+}
+
+.viñeta-icono {
+    margin-right: 10px;  /* Espacio entre el ícono y el texto */
+    font-size: 24px;  /* Tamaño del ícono */
+}
+#teoria .viñetas-container {
+    display: flex;
+    flex-direction: column;  /* Alinea las viñetas en columna */
+    gap: 20px;  /* Espacio entre las viñetas */
+    text-align: left;  /* Alinea el texto a la izquierda */
+    margin: 20px 0;  /* Margen superior e inferior */
+}
+
+#teoria .viñeta {
+    display: flex;
+    align-items: center;  /* Alinea los íconos y texto en el centro verticalmente */
+}
+
+#teoria .viñeta-icono {
+    margin-right: 10px;  /* Espacio entre el ícono y el texto */
+    font-size: 24px;  /* Tamaño del ícono */
+}
+
